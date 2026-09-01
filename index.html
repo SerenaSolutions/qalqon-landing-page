@@ -3,61 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YOU HAVEN'T NOTICED YET — QALQON</title>
-<meta name="description" content="QALQON investigates Brazil's gasoline blend change and asks a simple question: what should consumers expect when the fuel composition changes?">
-<meta property="og:title" content="You Haven't Noticed Yet — The Gasoline Question">
-<meta property="og:description" content="Brazil changed ethanol content from 30% to 32%. QALQON investigates what consumers should expect.">
+<title>YOU HAVEN'T NOTICED YET — QALQON | Gasoline Investigation</title>
+<meta name="description" content="QALQON investigates Brazil's gasoline blend change from E30 to E32. What should consumers expect? Explore transparency, pricing, and engine compatibility.">
+
+<!-- OPEN GRAPH - LINKEDIN OPTIMIZATION -->
+<meta property="og:title" content="🔍 You Haven't Noticed Yet — The Gasoline Question | QALQON">
+<meta property="og:description" content="Brazil changed ethanol content from 30% to 32%. What consumers should expect when fuel composition changes. Independent investigation into transparency, pricing & engine compatibility.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://qalqon-investigation.netlify.app">
+<meta property="og:url" content="https://splendorous-froyo-c44f1c.netlify.app/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=1200&h=630&fit=crop&q=80">
+<meta property="og:site_name" content="QALQON Investigation">
+<meta property="article:published_time" content="2026-08-01T00:00:00Z">
+<meta property="article:section" content="Investigation">
+
+<!-- TWITTER CARD - ENHANCED FOR SHARES -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="You Haven't Noticed Yet — The Gasoline Question">
-<meta name="twitter:description" content="Brazil's gasoline blend changed to E32. What should consumers know?">
+<meta name="twitter:title" content="🔍 You Haven't Noticed Yet — The Gasoline Question">
+<meta name="twitter:description" content="Brazil's E32 gasoline blend: what consumers should expect. Full investigation on transparency, pricing & compatibility.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=1200&h=630&fit=crop&q=80">
+
+<!-- KEYWORDS FOR SEO & ALGORITHM BOOST -->
+<meta name="keywords" content="gasoline, ethanol, Brazil, E32, fuel, consumer, transparency, investigation, pricing, engine compatibility, QALQON">
+
+<!-- STRUCTURED DATA FOR LINKEDIN ALGORITHM -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "You Haven't Noticed Yet — The Gasoline Question",
+  "description": "QALQON investigates Brazil's gasoline blend change and transparency",
+  "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=1200&h=630&fit=crop&q=80",
+  "datePublished": "2026-08-01",
+  "author": {
+    "@type": "Organization",
+    "name": "QALQON"
+  },
+  "keywords": "gasoline, ethanol, Brazil, E32, transparency, consumer"
+}
+</script>
 
 <style>
-*{box-sizing:border-box}body{margin:0;background:#0b0d10;color:#f5f7fa;font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-main{max-width:980px;margin:auto;padding:28px 18px 70px}.warning{color:#ffcc33;font-weight:800;text-align:center;text-transform:uppercase}
-h1{font-size:clamp(42px,8vw,82px);line-height:.95;margin:18px 0;text-transform:uppercase;letter-spacing:-3px}
-h2{font-size:30px;margin-top:44px}.lead{font-size:21px;color:#cdd3da}.meta{color:#8e98a4}
-.card{background:#14181d;border:1px solid #2a3037;border-radius:18px;padding:22px;margin:22px 0}
+*{box-sizing:border-box}
+body{margin:0;background:#0b0d10;color:#f5f7fa;font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%{opacity:1}50%{opacity:0.7}100%{opacity:1}}
+
+main{max-width:980px;margin:auto;padding:28px 18px 70px;animation:fadeInUp 0.6s ease-out}
+.warning{color:#ffcc33;font-weight:800;text-align:center;text-transform:uppercase;animation:pulse 2s infinite;padding:20px;background:rgba(255,204,51,0.1);border-radius:12px;margin-bottom:30px}
+h1{font-size:clamp(42px,8vw,82px);line-height:.95;margin:18px 0;text-transform:uppercase;letter-spacing:-3px;animation:fadeInUp 0.8s ease-out}
+h1.accent{color:#ffcc33;text-shadow:0 0 20px rgba(255,204,51,0.3)}
+h2{font-size:30px;margin-top:44px;border-left:4px solid #ffcc33;padding-left:15px}
+.lead{font-size:21px;color:#cdd3da;font-weight:500}
+.meta{color:#8e98a4;font-size:14px}
+
+.card{background:linear-gradient(135deg, #14181d 0%, #1a202c 100%);border:1px solid #2a3037;border-radius:18px;padding:22px;margin:22px 0;transition:all 0.3s ease;cursor:pointer}
+.card:hover{border-color:#ffcc33;box-shadow:0 0 30px rgba(255,204,51,0.1);transform:translateY(-2px)}
+.card.fact{border-left:4px solid #58d68d}
+.card.myth{border-left:4px solid #ff6b6b}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.stat{font-size:34px;font-weight:900}.label{color:#9da6b0}.accent{color:#ffcc33}
-table{width:100%;border-collapse:collapse;margin:18px 0}th,td{text-align:left;padding:13px;border-bottom:1px solid #30363d}th{color:#ffcc33}
-.quote{font-size:26px;font-weight:800;border-left:4px solid #ffcc33;padding-left:18px}
-.small{font-size:14px;color:#aeb6bf}.fact{border-left:4px solid #58d68d}.myth{border-left:4px solid #ff6b6b}
-a{color:#ffcc33;text-decoration:none}
-.share{display:flex;gap:10px;flex-wrap:wrap}.share a{border:1px solid #454c55;border-radius:999px;padding:9px 14px;text-decoration:none;transition:0.3s}
-.share a:hover{background:#ffcc33;color:#0b0d10}
+.stat{font-size:34px;font-weight:900}.label{color:#9da6b0;font-size:14px;text-transform:uppercase}.accent{color:#ffcc33}
+
+table{width:100%;border-collapse:collapse;margin:18px 0}th,td{text-align:left;padding:13px;border-bottom:1px solid #30363d}th{color:#ffcc33;background:rgba(255,204,51,0.05)}
+
+.quote{font-size:26px;font-weight:800;border-left:4px solid #ffcc33;padding-left:18px;color:#ffcc33}
+.small{font-size:14px;color:#aeb6bf}
+a{color:#ffcc33;text-decoration:none;transition:all 0.3s}
+a:hover{opacity:0.8}
+
+.share{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0}
+.share a{border:2px solid #ffcc33;border-radius:999px;padding:12px 20px;font-weight:600;transition:all 0.3s}
+.share a:hover{background:#ffcc33;color:#0b0d10;transform:scale(1.05)}
+
 footer{margin-top:50px;padding-top:20px;border-top:1px solid #30363d;color:#9da6b0}
-.topbar{background:#14181d;border-bottom:1px solid #2a3037;padding:15px 0;position:sticky;top:0;z-index:100}
+
+.topbar{background:linear-gradient(90deg, #14181d 0%, #1a202c 100%);border-bottom:2px solid #ffcc33;padding:15px 0;position:sticky;top:0;z-index:100}
 .topbar-inner{max-width:980px;margin:auto;padding:0 18px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:900;font-size:20px;color:#ffcc33;letter-spacing:2px}
-.status-dot{display:inline-block;width:8px;height:8px;background:#58d68d;border-radius:50%;margin-right:8px}
+.logo{font-weight:900;font-size:22px;color:#ffcc33;letter-spacing:2px;text-shadow:0 0 10px rgba(255,204,51,0.3)}
+.status-dot{display:inline-block;width:10px;height:10px;background:#58d68d;border-radius:50%;margin-right:8px;animation:pulse 1.5s infinite}
+
+@media (max-width:768px){
+  h1{font-size:32px}
+  h2{font-size:22px}
+  .share a{padding:10px 15px;font-size:14px}
+  main{padding:20px 15px 50px}
+}
 </style>
 </head>
 <body>
 
 <div class="topbar">
 <div class="topbar-inner">
-<div class="logo">⚠ QALQON</div>
-<div style="color:#8e98a4;font-size:12px"><span class="status-dot"></span>INVESTIGATION ACTIVE</div>
+<div class="logo">⚠️ QALQON</div>
+<div style="color:#8e98a4;font-size:12px"><span class="status-dot"></span>LIVE INVESTIGATION</div>
 </div>
 </div>
 
 <main>
-<div class="warning">⚠ You are about to read something that deserves a closer look ⚠</div>
+<div class="warning">⚠️ YOU ARE ABOUT TO READ SOMETHING THAT DESERVES A CLOSER LOOK ⚠️</div>
+
 <h1>You Haven't Noticed Yet</h1>
 <h1 class="accent">THE GASOLINE QUESTION</h1>
+
 <p class="lead">Brazil changed the ethanol content of regular gasoline from 30% to 32%. The real question isn't just what changed at the pump — it's how the change affects price, vehicle compatibility, energy content and transparency.</p>
-<p class="meta">By QALQON · August 2026 · Citizen Investigation</p>
+
+<p class="meta">📰 By QALQON · 📅 August 2026 · 🔍 Citizen Investigation</p>
 
 <div class="card">
 <h2>What are you actually buying?</h2>
 <div class="grid">
 <div><div class="stat">68%</div><div class="label">Gasoline</div></div>
 <div><div class="stat accent">32%</div><div class="label">Anhydrous ethanol</div></div>
-<div><div class="stat">E32</div><div class="label">Current blend designation</div></div>
+<div><div class="stat">E32</div><div class="label">Current blend</div></div>
 </div>
-<p>That does <strong>not</strong> mean the final pump price should automatically fall by 32%. Fuel pricing depends on the cost of each component, taxes, distribution, margins, refining, transport and market conditions. But a composition change deserves transparent numbers.</p>
+<p>That does <strong>not</strong> mean the final pump price should automatically fall by 32%. Fuel pricing depends on component costs, taxes, distribution, margins, refining and market conditions. But a composition change deserves transparent numbers.</p>
 </div>
 
 <h2>What changed in Brazil?</h2>
@@ -66,50 +127,50 @@ footer{margin-top:50px;padding-top:20px;border-top:1px solid #30363d;color:#9da6
 
 <h2>Brazil vs. the United States</h2>
 <table>
-<thead><tr><th>Country</th><th>Example blend</th><th>What consumers should know</th></tr></thead>
+<thead><tr><th>Country</th><th>Example Blend</th><th>What consumers should know</th></tr></thead>
 <tbody>
 <tr><td>🇧🇷 Brazil</td><td>E32</td><td>Higher ethanol content; compatibility and price effects need clear communication.</td></tr>
-<tr><td>🇺🇸 United States</td><td>E10 / E15 in specific contexts</td><td>Fuel labels and EPA rules distinguish blends and eligible uses.</td></tr>
+<tr><td>🇺🇸 United States</td><td>E10 / E15</td><td>Fuel labels and EPA rules distinguish blends and eligible uses.</td></tr>
 </tbody>
 </table>
-<p class="small">Important: the U.S. does not have a single gasoline blend that applies identically to every vehicle and use. E15, for example, has specific regulatory restrictions and labeling requirements.</p>
 
 <h2>💰 The calculation people get wrong</h2>
 <div class="card">
 <p class="quote">More ethanol does not automatically mean the pump price should fall by the same percentage.</p>
-<p>The economically correct comparison is to calculate the weighted cost of the gasoline and ethanol components, then add taxes, logistics, margins and other costs. Saying "32% ethanol means 32% cheaper gasoline" is an oversimplification.</p>
+<p>The economically correct comparison is to calculate the weighted cost of the gasoline and ethanol components, then add taxes, logistics, margins and other costs.</p>
 <p>That doesn't make the consumer question irrelevant. It makes it more important: <strong>show the numbers.</strong></p>
 </div>
 
 <h2>⚙️ What about engines?</h2>
-<p>Higher ethanol blends can have different compatibility requirements depending on the engine and equipment. Flex-fuel vehicles are designed specifically to handle a broad range of ethanol concentrations. Non-flex equipment should follow the manufacturer's approved fuel specification.</p>
-<p>Small engines, agricultural equipment, generators and professional machinery deserve special attention because their fuel requirements can differ from passenger vehicles.</p>
+<p>Higher ethanol blends can have different compatibility requirements. Flex-fuel vehicles are designed to handle a broad range of ethanol concentrations. Non-flex equipment should follow manufacturer-approved specifications.</p>
+<p>Small engines, agricultural equipment, generators and professional machinery deserve special attention.</p>
 
 <h2>🤖 What QALQON is asking</h2>
 <div class="card">
 <div class="grid">
-<div><div class="stat">01</div><div class="label">Publish the composition clearly</div></div>
-<div><div class="stat">02</div><div class="label">Show the cost impact</div></div>
+<div><div class="stat">01</div><div class="label">Publish composition clearly</div></div>
+<div><div class="stat">02</div><div class="label">Show cost impact</div></div>
 <div><div class="stat">03</div><div class="label">Document compatibility testing</div></div>
 <div><div class="stat">04</div><div class="label">Make consumer warnings visible</div></div>
 </div>
 </div>
 
 <h2>🔍 Myth vs. Fact</h2>
-<div class="card myth"><strong>MYTH:</strong> "32% ethanol means the gasoline should automatically cost 32% less."</div>
-<div class="card fact"><strong>FACT:</strong> The final price depends on the relative costs of the components plus taxes, distribution and margins. A proportional 32% discount cannot be assumed without the underlying cost data.</div>
-<div class="card myth"><strong>MYTH:</strong> "Every gasoline engine can safely use any ethanol blend."</div>
-<div class="card fact"><strong>FACT:</strong> Fuel compatibility depends on the vehicle or equipment and the manufacturer's specifications. Consumers should check the approved blend.</div>
+<div class="card myth"><strong>MYTH:</strong> "32% ethanol means gasoline should cost 32% less."</div>
+<div class="card fact"><strong>FACT:</strong> The final price depends on component costs plus taxes, distribution and margins. A proportional discount cannot be assumed.</div>
+<div class="card myth"><strong>MYTH:</strong> "Every engine can safely use any ethanol blend."</div>
+<div class="card fact"><strong>FACT:</strong> Fuel compatibility depends on manufacturer specifications. Consumers should verify approved blends.</div>
 
 <h2>🌍 The bigger issue</h2>
-<p>This story is bigger than one fuel blend. It is about a principle that applies everywhere: <strong>when governments or markets change what consumers receive, consumers deserve to know what changed, what it costs and what the risks are.</strong></p>
+<p>This story is bigger than one fuel blend. It is about a principle: <strong>when governments or markets change what consumers receive, consumers deserve to know what changed, what it costs and what the risks are.</strong></p>
 
 <div class="card">
-<h2>Share the question</h2>
-<p>If the fuel composition changes, should the consumer receive a clear breakdown of the economic and technical impact?</p>
+<h2>Share this investigation</h2>
+<p>Help spread awareness. Share with your network:</p>
 <div class="share">
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://qalqon-investigation.netlify.app" target="_blank">📱 LinkedIn</a>
-<a href="https://wa.me/?text=Check%20this%20investigation:%20https://qalqon-investigation.netlify.app" target="_blank">💬 WhatsApp</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://splendorous-froyo-c44f1c.netlify.app/" target="_blank">🔗 LinkedIn</a>
+<a href="https://wa.me/?text=Check%20this%20investigation:%20https://splendorous-froyo-c44f1c.netlify.app/" target="_blank">💬 WhatsApp</a>
+<a href="https://twitter.com/intent/tweet?text=Read%20this%20investigation:%20https://splendorous-froyo-c44f1c.netlify.app/%20%23Transparency%20%23Brazil" target="_blank">𝕏 Twitter</a>
 </div>
 </div>
 
@@ -117,8 +178,27 @@ footer{margin-top:50px;padding-top:20px;border-top:1px solid #30363d;color:#9da6
 <p><strong>Sources & further reading</strong></p>
 <p>Brazil's consumption-tax reform: OECD, <a href="https://www.oecd.org/en/publications/the-reform-of-brazil-s-consumption-tax-system_2a85e559-en.html" target="_blank">OECD — The reform of Brazil's consumption tax system</a>.</p>
 <p>Consumption taxes worldwide: OECD, <a href="https://www.oecd.org/en/topics/sub-issues/consumption-tax-trends.html" target="_blank">Consumption Tax Trends</a>.</p>
-<p class="small">QALQON editorial note: figures and claims should be checked against current official ANP, CNPE and EPA documentation before publication. This English edition intentionally avoids presenting unverified savings, damage estimates or AI "anomaly" percentages as established facts.</p>
+<p class="small">QALQON editorial note: figures and claims should be checked against current official ANP, CNPE and EPA documentation before publication.</p>
 </footer>
 </main>
+
+<script>
+// LinkedIn Algorithm Engagement Tracking
+document.addEventListener('DOMContentLoaded', function() {
+  // Track scroll depth
+  let maxScroll = 0;
+  window.addEventListener('scroll', function() {
+    let scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    maxScroll = Math.max(maxScroll, scrollPercent);
+  });
+  
+  // Track share clicks
+  document.querySelectorAll('.share a').forEach(link => {
+    link.addEventListener('click', function() {
+      console.log('Shared via: ' + this.textContent);
+    });
+  });
+});
+</script>
 </body>
 </html>
